@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webservice</title>
+</head>
+<body>
+    <h1>Signup(signup)</h1>
+    <form method="POST" name="sign_up" action="/webservice" enctype="multipart/form-data">
+        <label>user_name:<input type="text" name="user_name" required></label><span style="color: red">  required</span>
+        <br><br>
+        <label>first_name:<input type="text" name="first_name" ></label>
+        <br><br>
+        <label>last_name:<input type="text" name="last_name" ></label>
+        <br><br>
+        <label>email:<input type="text" name="email" required></label><span style="color: red">  required</span>
+        <br><br>
+        <label>password:<input type="text" name="password" required></label><span style="color: red">  required</span>
+        <br><br>
+        <label>address:<input type="text" name="address" ></label>
+        <br><br>
+        <label>Image:<input type="file" name="image" ></label>
+        <br><br>
+        <label>action:<input type="text" name="action" required></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+    <h1>Login(login)</h1>
+    <form method="POST" action="/webservice">
+       
+        <label>email:<input type="text" name="email" required></label><span style="color: red">  required</span>
+        <br><br>
+        <label>password:<input type="text" name="password" required></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <label>action:<input type="text" name="action" required></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+     <h1>Update profile(update_profile)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+        <label>user_id:<input type="text" name="user_id" required></label><span style="color: red">  required</span>
+        <br><br>
+        <label>user_name:<input type="text" name="user_name" ></label>
+        <br><br>
+        <label>first_name:<input type="text" name="first_name" ></label>
+        <br><br>
+        <label>last_name:<input type="text" name="last_name" ></label>
+        <br><br>
+        <label>email:<input type="text" name="email"></label>
+        <br><br>
+        <label>address:<input type="text" name="address"></label>
+        <br><br>
+        <label>Image:<input type="file" name="image" ></label>
+        <br><br>
+         <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+     <h1>Get Profile(get_profile)</h1>
+     <form method="POST" action="/webservice">
+        <label>user_id:<input type="text" name="user_id" required></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <label>action:<input type="text" name="action" required></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+     </form>
+     <br><br>
+
+      <h1>Add requests(add_requests)</h1>
+    <form method="POST" action="/webservice" enctype="multipart/form-data">
+        <label>user_id:<input type="text" name="user_id" required></label><span style="color: red">  required</span>
+        <br><br>
+        <label>image:<input type="file" name="image" ></label>s
+        <br><br>
+        <label>price:<input type="text" name="price" required></label><span style="color: red">  required</span>
+        <br><br>
+        <label>category:<input type="text" name="category" required></label><span style="color: red">  required</span>
+        <br><br>
+        <label>request_title:<input type="text" name="request_title" ></label>
+        <br><br>
+        <label>description:<input type="text" name="description" ></label>
+        <br><br>
+        <label>currency:<input type="text" name="currency" ></label>
+        <br><br>
+        <label>latitude:<input type="text" name="latitude" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>longitude:<input type="text" name="longitude" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>item_location:<input type="text" name="item_location" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>required_time:<input type="text" name="required_time" ></label>
+        <br><br>
+        <label>delievery_type:<input type="text" name="delievery_type" ></label>
+        <br><br>
+        <label>commision:<input type="text" name="commision" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>transport_stipend:<input type="text" name="transport_stipend" ></label>
+        <br><br>
+        <label>action:<input type="text" name="action" required></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+         <h1>Get requests(get_requests)</h1>
+     <form method="POST" action="/webservice">
+        <label>request_id:<input type="text" name="request_id" required></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <label>action:<input type="text" name="action" required></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+     </form>
+     <br><br>
+
+
+
+      <h1>Add ratings(add_ratings)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>request_id:<input type="text" name="request_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>buyer_id:<input type="text" name="buyer_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>shopper_id:<input type="text" name="shopper_id"></label><span style="color: red">  required</span>
+        <br><br>
+        <label>rating:<input type="text" name="rating"></label><span style="color: red">  required</span>
+        <br><br>
+        <label>comments:<input type="text" name="comments" ></label>
+        <br><br>
+         <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+    <h1>Request status(request_status)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>request_id:<input type="text" name="request_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>status:<input type="text" name="status" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>assigned_to:<input type="text" name="assigned_to"></label><span style="color: red">  required</span>
+        <br><br>
+        <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+    <h1>Friendship(friendship)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>user_id:<input type="text" name="user_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>friend_id:<input type="text" name="friend_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>status:<input type="text" name="status"></label><span style="color: red"> follow=1 , unfollow=1 required</span>
+        <br><br>
+        <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+     <h1>Payment method(payment_method)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>user_id:<input type="text" name="user_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>card_type:<input type="text" name="card_type" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>name_on_card:<input type="text" name="name_on_card"></label><span style="color: red"> required</span>
+        <br><br>
+         <label>card_number:<input type="text" name="card_number" ></label><span style="color: red">  required</span>
+        <br><br>
+         <label>expiry:<input type="text" name="expiry" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+     <h1>Delievery address(delievery_address)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>user_id:<input type="text" name="user_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>full_name:<input type="text" name="full_name" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>address1:<input type="text" name="address1"></label><span style="color: red"> required</span>
+        <br><br>
+        <label>address2:<input type="text" name="address2" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>city:<input type="text" name="city" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>postcode:<input type="text" name="postcode" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>contact:<input type="text" name=contact ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+    <h1>Application(application)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>request_id:<input type="text" name="request_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>applicant_id:<input type="text" name="applicant_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>status:<input type="text" name="status"></label><span style="color: red"> follow=1 , unfollow=1 required</span>
+        <br><br>
+        <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+
+    <h1>Contact us(contact_us)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>user_id:<input type="text" name="user_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>message:<input type="text" name="message" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+     <h1>Delete user(delete_user)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>user_id:<input type="text" name="user_id" ></label><span style="color: red">  required</span>
+        <br><br>
+       <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+
+    <h1>Change password(change_password)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>user_id:<input type="text" name="user_id" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>old_password:<input type="text" name="old_password" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>new_password:<input type="text" name="new_password" ></label><span style="color: red">  required</span>
+        <br><br>        
+        <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+
+    <h1>Forgot password(forgot_password)</h1>
+     <form method="POST" action="/webservice"  enctype="multipart/form-data">
+        
+       <label>email:<input type="text" name="email" ></label><span style="color: red">  required</span>
+        <br><br>
+        <label>action:<input type="text" name="action" ></label><span style="color: red">  required</span>
+        <br>
+        <br>
+        <input type="submit" value="GO">
+    </form>
+    <br><br>
+    
+
+
+</body>
+</html>
